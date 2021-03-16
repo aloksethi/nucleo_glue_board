@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name dk_Terminal-Blocks-Wire-to-Board)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_Terminal-Blocks-Wire-to-Board.lib)(options "")(descr ""))
+)

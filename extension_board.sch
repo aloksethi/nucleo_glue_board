@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:extension_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,17 +16,6 @@ Comment4 ""
 $EndDescr
 Text Notes 7450 7500 0    50   ~ 0
 Glue board to connect to Nucleo, Power board and RF board
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even CN12
-U 1 1 604A1AE1
-P 10000 1850
-F 0 "CN12" H 10050 2967 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 10050 2876 50  0000 C CNN
-F 2 "" H 10000 1850 50  0001 C CNN
-F 3 "~" H 10000 1850 50  0001 C CNN
-	1    10000 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9800 1350 9600 1350
 Wire Wire Line
@@ -33,12 +23,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR09
 U 1 1 604A76FA
-P 8850 2250
-F 0 "#PWR09" H 8850 2000 50  0001 C CNN
-F 1 "GND" H 8855 2077 50  0000 C CNN
-F 2 "" H 8850 2250 50  0001 C CNN
-F 3 "" H 8850 2250 50  0001 C CNN
-	1    8850 2250
+P 8300 2900
+F 0 "#PWR09" H 8300 2650 50  0001 C CNN
+F 1 "GND" H 8305 2727 50  0000 C CNN
+F 2 "" H 8300 2900 50  0001 C CNN
+F 3 "" H 8300 2900 50  0001 C CNN
+	1    8300 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -61,17 +51,6 @@ F 3 "" H 10750 3100 50  0001 C CNN
 	1    10750 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even CN11
-U 1 1 604A8F5C
-P 8250 1900
-F 0 "CN11" H 8300 2317 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 8300 2226 50  0000 C CNN
-F 2 "" H 8250 1900 50  0001 C CNN
-F 3 "~" H 8250 1900 50  0001 C CNN
-	1    8250 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 2000 8850 2000
 $Comp
@@ -85,11 +64,6 @@ F 3 "" H 9150 3100 50  0001 C CNN
 	1    9150 3100
 	1    0    0    -1  
 $EndComp
-Connection ~ 9150 2850
-Wire Wire Line
-	9150 2850 9150 3100
-Wire Wire Line
-	9150 1250 9150 2850
 Text GLabel 10300 950  2    50   Input ~ 0
 IC_CLK
 Text GLabel 9800 1050 0    50   Input ~ 0
@@ -113,8 +87,6 @@ Wire Wire Line
 Connection ~ 9600 1250
 Wire Wire Line
 	9600 1250 9800 1250
-Wire Wire Line
-	9150 2850 9800 2850
 Text GLabel 9800 1750 0    50   Input ~ 0
 I2C_CLK
 Text GLabel 9800 1150 0    50   Input ~ 0
@@ -156,7 +128,7 @@ U 1 1 604B281D
 P 950 800
 F 0 "J1" H 868 1017 50  0000 C CNN
 F 1 "Screw_Terminal_01x02" H 868 926 50  0000 C CNN
-F 2 "" H 950 800 50  0001 C CNN
+F 2 "digikey-footprints:Term_Block_1x2_P5.08MM" H 950 800 50  0001 C CNN
 F 3 "~" H 950 800 50  0001 C CNN
 	1    950  800 
 	-1   0    0    -1  
@@ -181,7 +153,7 @@ U 1 1 604B9AD6
 P 2200 1150
 F 0 "C1" H 2318 1196 50  0000 L CNN
 F 1 "CP" H 2318 1105 50  0000 L CNN
-F 2 "" H 2238 1000 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 2238 1000 50  0001 C CNN
 F 3 "~" H 2200 1150 50  0001 C CNN
 	1    2200 1150
 	1    0    0    -1  
@@ -192,7 +164,7 @@ U 1 1 604BA429
 P 2800 950
 F 0 "D1" V 2839 833 50  0000 R CNN
 F 1 "LED" V 2748 833 50  0000 R CNN
-F 2 "" H 2800 950 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2800 950 50  0001 C CNN
 F 3 "~" H 2800 950 50  0001 C CNN
 	1    2800 950 
 	0    -1   -1   0   
@@ -203,7 +175,7 @@ U 1 1 604BB6D5
 P 2800 1400
 F 0 "R9" H 2870 1446 50  0000 L CNN
 F 1 "R" H 2870 1355 50  0000 L CNN
-F 2 "" V 2730 1400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 1400 50  0001 C CNN
 F 3 "~" H 2800 1400 50  0001 C CNN
 	1    2800 1400
 	1    0    0    -1  
@@ -238,8 +210,6 @@ Power In
 Connection ~ 2200 1700
 Wire Wire Line
 	2200 1700 2200 1750
-Wire Wire Line
-	8850 2000 8850 2250
 Text GLabel 2900 800  2    50   Input ~ 0
 VDD
 Wire Wire Line
@@ -261,7 +231,7 @@ U 1 1 604D0727
 P 10000 4500
 F 0 "J7" H 10050 5317 50  0000 C CNN
 F 1 "Conn_02x14_Odd_Even" H 10050 5226 50  0000 C CNN
-F 2 "" H 10000 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical_SMD" H 10000 4500 50  0001 C CNN
 F 3 "~" H 10000 4500 50  0001 C CNN
 	1    10000 4500
 	1    0    0    -1  
@@ -380,7 +350,7 @@ U 1 1 604E94D6
 P 1650 2500
 F 0 "R1" H 1720 2546 50  0000 L CNN
 F 1 "20K" H 1720 2455 50  0000 L CNN
-F 2 "" V 1580 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 2500 50  0001 C CNN
 F 3 "~" H 1650 2500 50  0001 C CNN
 	1    1650 2500
 	1    0    0    -1  
@@ -391,7 +361,7 @@ U 1 1 604E9A13
 P 1650 2950
 F 0 "R2" H 1720 2996 50  0000 L CNN
 F 1 "10K" H 1720 2905 50  0000 L CNN
-F 2 "" V 1580 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 2950 50  0001 C CNN
 F 3 "~" H 1650 2950 50  0001 C CNN
 	1    1650 2950
 	1    0    0    -1  
@@ -428,7 +398,7 @@ U 1 1 604F3DD4
 P 1650 3850
 F 0 "R3" H 1720 3896 50  0000 L CNN
 F 1 "20K" H 1720 3805 50  0000 L CNN
-F 2 "" V 1580 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 3850 50  0001 C CNN
 F 3 "~" H 1650 3850 50  0001 C CNN
 	1    1650 3850
 	1    0    0    -1  
@@ -439,7 +409,7 @@ U 1 1 604F3DDA
 P 1650 4300
 F 0 "R4" H 1720 4346 50  0000 L CNN
 F 1 "10K" H 1720 4255 50  0000 L CNN
-F 2 "" V 1580 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1580 4300 50  0001 C CNN
 F 3 "~" H 1650 4300 50  0001 C CNN
 	1    1650 4300
 	1    0    0    -1  
@@ -476,7 +446,7 @@ U 1 1 604F573D
 P 2750 3850
 F 0 "R7" H 2820 3896 50  0000 L CNN
 F 1 "20K" H 2820 3805 50  0000 L CNN
-F 2 "" V 2680 3850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 3850 50  0001 C CNN
 F 3 "~" H 2750 3850 50  0001 C CNN
 	1    2750 3850
 	1    0    0    -1  
@@ -487,7 +457,7 @@ U 1 1 604F5743
 P 2750 4300
 F 0 "R8" H 2820 4346 50  0000 L CNN
 F 1 "10K" H 2820 4255 50  0000 L CNN
-F 2 "" V 2680 4300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 4300 50  0001 C CNN
 F 3 "~" H 2750 4300 50  0001 C CNN
 	1    2750 4300
 	1    0    0    -1  
@@ -524,7 +494,7 @@ U 1 1 604F7CC9
 P 2750 2500
 F 0 "R5" H 2820 2546 50  0000 L CNN
 F 1 "20K" H 2820 2455 50  0000 L CNN
-F 2 "" V 2680 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 2500 50  0001 C CNN
 F 3 "~" H 2750 2500 50  0001 C CNN
 	1    2750 2500
 	1    0    0    -1  
@@ -535,7 +505,7 @@ U 1 1 604F7CCF
 P 2750 2950
 F 0 "R6" H 2820 2996 50  0000 L CNN
 F 1 "10K" H 2820 2905 50  0000 L CNN
-F 2 "" V 2680 2950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 2950 50  0001 C CNN
 F 3 "~" H 2750 2950 50  0001 C CNN
 	1    2750 2950
 	1    0    0    -1  
@@ -604,7 +574,7 @@ U 1 1 6051E2B9
 P 4850 1500
 F 0 "RV2" H 4780 1546 50  0000 R CNN
 F 1 "R_POT_TRIM" H 4780 1455 50  0000 R CNN
-F 2 "" H 4850 1500 50  0001 C CNN
+F 2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 4850 1500 50  0001 C CNN
 F 3 "~" H 4850 1500 50  0001 C CNN
 	1    4850 1500
 	1    0    0    -1  
@@ -632,7 +602,7 @@ U 1 1 6052AEFD
 P 8400 4750
 F 0 "CN1" H 8450 5867 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 8450 5776 50  0000 C CNN
-F 2 "" H 8400 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 8400 4750 50  0001 C CNN
 F 3 "~" H 8400 4750 50  0001 C CNN
 	1    8400 4750
 	1    0    0    -1  
@@ -748,7 +718,7 @@ U 1 1 605A8B36
 P 4350 3100
 F 0 "RV1" H 4280 3146 50  0000 R CNN
 F 1 "R_POT_TRIM" H 4280 3055 50  0000 R CNN
-F 2 "" H 4350 3100 50  0001 C CNN
+F 2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 4350 3100 50  0001 C CNN
 F 3 "~" H 4350 3100 50  0001 C CNN
 	1    4350 3100
 	1    0    0    -1  
@@ -805,7 +775,7 @@ U 1 1 605AD52C
 P 5600 3100
 F 0 "RV3" H 5530 3146 50  0000 R CNN
 F 1 "R_POT_TRIM" H 5530 3055 50  0000 R CNN
-F 2 "" H 5600 3100 50  0001 C CNN
+F 2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 5600 3100 50  0001 C CNN
 F 3 "~" H 5600 3100 50  0001 C CNN
 	1    5600 3100
 	1    0    0    -1  
@@ -862,7 +832,7 @@ U 1 1 605B1891
 P 6750 3100
 F 0 "RV4" H 6680 3146 50  0000 R CNN
 F 1 "R_POT_TRIM" H 6680 3055 50  0000 R CNN
-F 2 "" H 6750 3100 50  0001 C CNN
+F 2 "digikey-footprints:Trimpot_3.8mmx3.6mm_TC33X-2-103E" H 6750 3100 50  0001 C CNN
 F 3 "~" H 6750 3100 50  0001 C CNN
 	1    6750 3100
 	1    0    0    -1  
@@ -917,7 +887,6 @@ Text Notes 10350 2400 0    50   ~ 0
 PB13, RMII
 NoConn ~ 10300 2350
 NoConn ~ 10300 2550
-NoConn ~ 10300 2850
 NoConn ~ 9800 2650
 NoConn ~ 9800 2550
 NoConn ~ 9800 2450
@@ -973,7 +942,7 @@ U 1 1 6062D4A6
 P 4100 4400
 F 0 "TP1" V 4054 4588 50  0000 L CNN
 F 1 "TestPoint" V 4145 4588 50  0000 L CNN
-F 2 "" H 4300 4400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4400 50  0001 C CNN
 F 3 "~" H 4300 4400 50  0001 C CNN
 	1    4100 4400
 	0    1    1    0   
@@ -992,7 +961,7 @@ U 1 1 6062DDDD
 P 4100 4600
 F 0 "TP2" V 4054 4788 50  0000 L CNN
 F 1 "TestPoint" V 4145 4788 50  0000 L CNN
-F 2 "" H 4300 4600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4600 50  0001 C CNN
 F 3 "~" H 4300 4600 50  0001 C CNN
 	1    4100 4600
 	0    1    1    0   
@@ -1003,7 +972,7 @@ U 1 1 6062E05A
 P 4100 4800
 F 0 "TP3" V 4054 4988 50  0000 L CNN
 F 1 "TestPoint" V 4145 4988 50  0000 L CNN
-F 2 "" H 4300 4800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4800 50  0001 C CNN
 F 3 "~" H 4300 4800 50  0001 C CNN
 	1    4100 4800
 	0    1    1    0   
@@ -1014,7 +983,7 @@ U 1 1 6062E1AB
 P 4100 5000
 F 0 "TP4" V 4054 5188 50  0000 L CNN
 F 1 "TestPoint" V 4145 5188 50  0000 L CNN
-F 2 "" H 4300 5000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 5000 50  0001 C CNN
 F 3 "~" H 4300 5000 50  0001 C CNN
 	1    4100 5000
 	0    1    1    0   
@@ -1025,7 +994,7 @@ U 1 1 6063C3D7
 P 4550 1900
 F 0 "J3" H 4630 1892 50  0000 L CNN
 F 1 "Conn_01x02" H 4630 1801 50  0000 L CNN
-F 2 "" H 4550 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 4550 1900 50  0001 C CNN
 F 3 "~" H 4550 1900 50  0001 C CNN
 	1    4550 1900
 	1    0    0    -1  
@@ -1038,7 +1007,7 @@ U 1 1 606412D9
 P 4050 3450
 F 0 "J2" H 4130 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 4130 3351 50  0000 L CNN
-F 2 "" H 4050 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 4050 3450 50  0001 C CNN
 F 3 "~" H 4050 3450 50  0001 C CNN
 	1    4050 3450
 	1    0    0    -1  
@@ -1049,7 +1018,7 @@ U 1 1 60641A14
 P 5300 3450
 F 0 "J4" H 5380 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 5380 3351 50  0000 L CNN
-F 2 "" H 5300 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 5300 3450 50  0001 C CNN
 F 3 "~" H 5300 3450 50  0001 C CNN
 	1    5300 3450
 	1    0    0    -1  
@@ -1060,7 +1029,7 @@ U 1 1 60641FCE
 P 6450 3450
 F 0 "J6" H 6530 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 6530 3351 50  0000 L CNN
-F 2 "" H 6450 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 6450 3450 50  0001 C CNN
 F 3 "~" H 6450 3450 50  0001 C CNN
 	1    6450 3450
 	1    0    0    -1  
@@ -1074,21 +1043,17 @@ U 1 1 60646DF2
 P 5400 4700
 F 0 "J5" H 5450 5017 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 5450 4926 50  0000 C CNN
-F 2 "" H 5400 4700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 5400 4700 50  0001 C CNN
 F 3 "~" H 5400 4700 50  0001 C CNN
 	1    5400 4700
 	1    0    0    -1  
 $EndComp
-Text GLabel 5200 4700 0    50   Input ~ 0
-PC12
-Text GLabel 5200 4800 0    50   Input ~ 0
-PD2
 Text GLabel 5700 4700 2    50   Input ~ 0
-PF6
+PC12
+Text GLabel 5700 4600 2    50   Input ~ 0
+PD2
 Text GLabel 5200 4600 0    50   Input ~ 0
-VDD
-Wire Wire Line
-	5950 4800 5950 4900
+PF6
 $Comp
 L power:GND #PWR07
 U 1 1 6064F80D
@@ -1100,13 +1065,65 @@ F 3 "" H 5950 4900 50  0001 C CNN
 	1    5950 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 4600 5950 4600
-Wire Wire Line
-	5950 4600 5950 4800
-Connection ~ 5950 4800
-Wire Wire Line
-	5700 4800 5950 4800
 Text Notes 4850 850  0    50   ~ 0
 There are capacitors on the RF board for these currents
+$Comp
+L Connector_Generic:Conn_02x19_Odd_Even J9
+U 1 1 605368F2
+P 10000 1850
+F 0 "J9" H 10050 2967 50  0000 C CNN
+F 1 "Conn_02x19_Odd_Even" H 10050 2876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x19_P2.54mm_Vertical" H 10000 1850 50  0001 C CNN
+F 3 "~" H 10000 1850 50  0001 C CNN
+	1    10000 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J8
+U 1 1 6053A2E2
+P 8250 2100
+F 0 "J8" H 8300 2717 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8300 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8250 2100 50  0001 C CNN
+F 3 "~" H 8250 2100 50  0001 C CNN
+	1    8250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1250 9150 3100
+NoConn ~ 8050 2300
+NoConn ~ 8050 2400
+NoConn ~ 8550 2300
+NoConn ~ 8550 2400
+NoConn ~ 8550 2200
+Wire Wire Line
+	8850 2600 8550 2600
+Wire Wire Line
+	8850 2000 8850 2600
+Wire Wire Line
+	8850 2600 8850 2900
+Wire Wire Line
+	8850 2900 8300 2900
+Connection ~ 8850 2600
+Wire Wire Line
+	8050 2600 7700 2600
+Wire Wire Line
+	7700 2600 7700 2900
+Wire Wire Line
+	7700 2900 8300 2900
+Connection ~ 8300 2900
+Text GLabel 8050 2500 0    50   Input ~ 0
+PA15
+Text GLabel 5200 4800 0    50   Input ~ 0
+PA15
+Text GLabel 8550 2500 2    50   Input ~ 0
+VDD
+Wire Wire Line
+	5700 4800 5950 4800
+Text GLabel 8050 2200 0    50   Input ~ 0
+PF7
+Text GLabel 5200 4700 0    50   Input ~ 0
+PF7
+Wire Wire Line
+	5950 4800 5950 4900
 $EndSCHEMATC
