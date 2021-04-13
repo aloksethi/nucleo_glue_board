@@ -16,10 +16,6 @@ Comment4 ""
 $EndDescr
 Text Notes 7450 7500 0    50   ~ 0
 Glue board to connect to Nucleo, Power board and RF board
-Wire Wire Line
-	9800 1350 9600 1350
-Wire Wire Line
-	9600 1350 9600 1250
 $Comp
 L power:GND #PWR09
 U 1 1 604A76FA
@@ -82,11 +78,6 @@ Text GLabel 10300 1750 2    50   Input ~ 0
 SPI_NSS
 Text GLabel 9800 1850 0    50   Input ~ 0
 SYNTH_POW_EN
-Wire Wire Line
-	9150 1250 9600 1250
-Connection ~ 9600 1250
-Wire Wire Line
-	9600 1250 9800 1250
 Text GLabel 9800 1750 0    50   Input ~ 0
 I2C_CLK
 Text GLabel 9800 1150 0    50   Input ~ 0
@@ -1089,8 +1080,6 @@ F 3 "~" H 8250 2100 50  0001 C CNN
 	1    8250 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 1250 9150 3100
 NoConn ~ 8050 2300
 NoConn ~ 8050 2400
 NoConn ~ 8550 2300
@@ -1126,4 +1115,9 @@ Text GLabel 5200 4700 0    50   Input ~ 0
 PF7
 Wire Wire Line
 	5950 4800 5950 4900
+Wire Wire Line
+	9150 1350 9150 3100
+Wire Wire Line
+	9150 1350 9800 1350
+NoConn ~ 9800 1250
 $EndSCHEMATC
