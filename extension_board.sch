@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title ""
 Date ""
-Rev ""
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -19,88 +19,88 @@ Glue board to connect to Nucleo, Power board and RF board
 $Comp
 L power:GND #PWR09
 U 1 1 604A76FA
-P 8300 2900
-F 0 "#PWR09" H 8300 2650 50  0001 C CNN
-F 1 "GND" H 8305 2727 50  0000 C CNN
-F 2 "" H 8300 2900 50  0001 C CNN
-F 3 "" H 8300 2900 50  0001 C CNN
-	1    8300 2900
+P 8150 3050
+F 0 "#PWR09" H 8150 2800 50  0001 C CNN
+F 1 "GND" H 8155 2877 50  0000 C CNN
+F 2 "" H 8150 3050 50  0001 C CNN
+F 3 "" H 8150 3050 50  0001 C CNN
+	1    8150 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 1850 10750 1850
+	10500 1800 10950 1800
 Wire Wire Line
-	10750 1850 10750 2450
+	10950 1800 10950 2400
 Wire Wire Line
-	10300 2450 10750 2450
-Connection ~ 10750 2450
+	10500 2400 10950 2400
+Connection ~ 10950 2400
 Wire Wire Line
-	10750 2450 10750 3100
+	10950 2400 10950 3050
 $Comp
 L power:GND #PWR012
 U 1 1 604A859E
-P 10750 3100
-F 0 "#PWR012" H 10750 2850 50  0001 C CNN
-F 1 "GND" H 10755 2927 50  0000 C CNN
-F 2 "" H 10750 3100 50  0001 C CNN
-F 3 "" H 10750 3100 50  0001 C CNN
-	1    10750 3100
+P 10950 3050
+F 0 "#PWR012" H 10950 2800 50  0001 C CNN
+F 1 "GND" H 10955 2877 50  0000 C CNN
+F 2 "" H 10950 3050 50  0001 C CNN
+F 3 "" H 10950 3050 50  0001 C CNN
+	1    10950 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 2000 8850 2000
+	8400 1950 8700 1950
 $Comp
 L power:GND #PWR010
 U 1 1 604ABCB7
-P 9150 3100
-F 0 "#PWR010" H 9150 2850 50  0001 C CNN
-F 1 "GND" H 9155 2927 50  0000 C CNN
-F 2 "" H 9150 3100 50  0001 C CNN
-F 3 "" H 9150 3100 50  0001 C CNN
-	1    9150 3100
+P 9350 3050
+F 0 "#PWR010" H 9350 2800 50  0001 C CNN
+F 1 "GND" H 9355 2877 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 950  2    50   Input ~ 0
+Text GLabel 10500 900  2    50   Input ~ 0
 IC_CLK
-Text GLabel 9800 1050 0    50   Input ~ 0
+Text GLabel 10000 1000 0    50   Input ~ 0
 IC_DATA
-Text GLabel 10300 1050 2    50   Input ~ 0
+Text GLabel 10500 1000 2    50   Input ~ 0
 IC_LE1
-Text GLabel 10300 1650 2    50   Input ~ 0
+Text GLabel 10500 1600 2    50   Input ~ 0
 IC_LE2
-Text GLabel 9800 1450 0    50   Input ~ 0
+Text GLabel 10000 1400 0    50   Input ~ 0
 SPI_CLK
-Text GLabel 9800 2350 0    50   Input ~ 0
+Text GLabel 10000 2300 0    50   Input ~ 0
 SPI_MOSI
-Text GLabel 9800 1550 0    50   Input ~ 0
+Text GLabel 10000 1500 0    50   Input ~ 0
 SPI_MISO
-Text GLabel 10300 1750 2    50   Input ~ 0
+Text GLabel 10500 1700 2    50   Input ~ 0
 SPI_NSS
-Text GLabel 9800 1850 0    50   Input ~ 0
+Text GLabel 10000 1800 0    50   Input ~ 0
 SYNTH_POW_EN
-Text GLabel 9800 1750 0    50   Input ~ 0
+Text GLabel 10000 1700 0    50   Input ~ 0
 I2C_CLK
-Text GLabel 9800 1150 0    50   Input ~ 0
+Text GLabel 10000 1100 0    50   Input ~ 0
 I2C_DATA
-Text GLabel 10300 2050 2    50   Input ~ 0
+Text GLabel 10500 2000 2    50   Input ~ 0
 3v3_POW_EN
-Text GLabel 9800 2150 0    50   Input ~ 0
+Text GLabel 10000 2100 0    50   Input ~ 0
 SW1_VCTRL
-Text GLabel 10300 2150 2    50   Input ~ 0
+Text GLabel 10500 2100 2    50   Input ~ 0
 SW2_VCTRL
-Text GLabel 9800 2250 0    50   Input ~ 0
+Text GLabel 10000 2200 0    50   Input ~ 0
 EN_SUP1
-Text GLabel 9800 2750 0    50   Input ~ 0
+Text GLabel 10000 2700 0    50   Input ~ 0
 EN_SUP4
-Text GLabel 10300 2650 2    50   Input ~ 0
+Text GLabel 10500 2600 2    50   Input ~ 0
 EN_SUP3
-Text GLabel 10300 2750 2    50   Input ~ 0
+Text GLabel 10500 2700 2    50   Input ~ 0
 EN_SUP5
-Text GLabel 8550 1700 2    50   Input ~ 0
+Text GLabel 8400 1650 2    50   Input ~ 0
 EN_SUP2
-Text GLabel 8050 1700 0    50   Input ~ 0
+Text GLabel 7900 1650 0    50   Input ~ 0
 EN_SUP_REG5V
-Text GLabel 8550 1900 2    50   Input ~ 0
+Text GLabel 8400 1850 2    50   Input ~ 0
 VDD
 $Comp
 L power:+5V #PWR03
@@ -208,12 +208,6 @@ Wire Wire Line
 Connection ~ 2800 800 
 Wire Notes Line
 	11100 550  11100 3450
-Wire Notes Line
-	11100 3450 7400 3450
-Wire Notes Line
-	7400 3450 7400 550 
-Wire Notes Line
-	7400 550  11100 550 
 Text Notes 8600 950  2    50   ~ 0
 Nucleo connectors\nwill go on back side. \nboth female
 $Comp
@@ -227,7 +221,7 @@ F 3 "~" H 10000 4500 50  0001 C CNN
 	1    10000 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 950  2    50   Input ~ 0
+Text GLabel 10500 900  2    50   Input ~ 0
 IC_CLK
 Text GLabel 9800 4400 0    50   Input ~ 0
 IC_CLK_1v
@@ -252,7 +246,7 @@ Wire Wire Line
 Connection ~ 10900 4200
 Wire Wire Line
 	10900 4200 10900 4500
-Text GLabel 9800 1050 0    50   Input ~ 0
+Text GLabel 10000 1000 0    50   Input ~ 0
 IC_DATA
 Text GLabel 9800 4300 0    50   Input ~ 0
 IC_DATA_1v
@@ -543,7 +537,7 @@ U 1 1 6051BACC
 P 4350 950
 F 0 "U2" H 4220 996 50  0000 R CNN
 F 1 "LM334Z" H 4220 905 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4375 775 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 4375 775 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm134.pdf" H 4350 950 50  0001 C CIN
 	1    4350 950 
 	1    0    0    -1  
@@ -687,7 +681,7 @@ U 1 1 605A8B2A
 P 3850 2550
 F 0 "U1" H 3720 2596 50  0000 R CNN
 F 1 "LM334Z" H 3720 2505 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3875 2375 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 3875 2375 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm134.pdf" H 3850 2550 50  0001 C CIN
 	1    3850 2550
 	1    0    0    -1  
@@ -744,7 +738,7 @@ U 1 1 605AD520
 P 5100 2550
 F 0 "U3" H 4970 2596 50  0000 R CNN
 F 1 "LM334Z" H 4970 2505 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5125 2375 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 5125 2375 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm134.pdf" H 5100 2550 50  0001 C CIN
 	1    5100 2550
 	1    0    0    -1  
@@ -801,7 +795,7 @@ U 1 1 605B1885
 P 6250 2550
 F 0 "U4" H 6120 2596 50  0000 R CNN
 F 1 "LM334Z" H 6120 2505 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6275 2375 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6275 2375 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm134.pdf" H 6250 2550 50  0001 C CIN
 	1    6250 2550
 	1    0    0    -1  
@@ -850,62 +844,62 @@ Wire Wire Line
 	6250 2750 6250 3350
 Wire Wire Line
 	6250 2350 6250 2250
-NoConn ~ 10300 1150
-Text Notes 10350 1200 0    50   ~ 0
+NoConn ~ 10500 1100
+Text Notes 10550 1150 0    50   ~ 0
 PC5, RMII
-NoConn ~ 10300 1250
-Text Notes 10350 1300 0    50   ~ 0
+NoConn ~ 10500 1200
+Text Notes 10550 1250 0    50   ~ 0
 U5V
-NoConn ~ 10300 1350
-Text Notes 10350 1400 0    50   ~ 0
+NoConn ~ 10500 1300
+Text Notes 10550 1350 0    50   ~ 0
 PD8, STLINK, RX
-NoConn ~ 10300 1450
-Text Notes 10350 1500 0    50   ~ 0
+NoConn ~ 10500 1400
+Text Notes 10550 1450 0    50   ~ 0
 PA12, USB
-NoConn ~ 10300 1550
-Text Notes 10350 1600 0    50   ~ 0
+NoConn ~ 10500 1500
+Text Notes 10550 1550 0    50   ~ 0
 PA11, USB
-NoConn ~ 10300 1950
-Text Notes 10350 1950 0    50   ~ 0
+NoConn ~ 10500 1900
+Text Notes 10550 1900 0    50   ~ 0
 PB2, free
-NoConn ~ 10300 2250
-Text Notes 10350 2300 0    50   ~ 0
+NoConn ~ 10500 2200
+Text Notes 10550 2250 0    50   ~ 0
 PB14, R_LED_N
-Text Notes 9450 950  0    50   ~ 0
+Text Notes 9650 900  0    50   ~ 0
 G_LED_N
-NoConn ~ 9800 950 
-Text Notes 10350 2400 0    50   ~ 0
+NoConn ~ 10000 900 
+Text Notes 10550 2350 0    50   ~ 0
 PB13, RMII
-NoConn ~ 10300 2350
-NoConn ~ 10300 2550
-NoConn ~ 9800 2650
-NoConn ~ 9800 2550
-NoConn ~ 9800 2450
-NoConn ~ 9800 2050
-NoConn ~ 9800 1950
-NoConn ~ 9800 1650
-NoConn ~ 8050 1900
-NoConn ~ 8050 2000
-NoConn ~ 8550 2100
-Text Notes 10350 2550 0    50   ~ 0
+NoConn ~ 10500 2300
+NoConn ~ 10500 2500
+NoConn ~ 10000 2600
+NoConn ~ 10000 2500
+NoConn ~ 10000 2400
+NoConn ~ 10000 2000
+NoConn ~ 10000 1900
+NoConn ~ 10000 1600
+NoConn ~ 7900 1850
+NoConn ~ 7900 1950
+NoConn ~ 8400 2050
+Text Notes 10550 2500 0    50   ~ 0
 PC4, RMII
-Text Notes 9750 2700 2    50   ~ 0
+Text Notes 9950 2650 2    50   ~ 0
 PA2, RMII
-Text Notes 9750 2600 2    50   ~ 0
+Text Notes 9950 2550 2    50   ~ 0
 PA10, RMII
-Text Notes 9750 2500 2    50   ~ 0
+Text Notes 9950 2450 2    50   ~ 0
 PB3, JTAG
-Text Notes 9750 1700 2    50   ~ 0
+Text Notes 9950 1650 2    50   ~ 0
 PA7, RMII
-Text GLabel 8050 1800 0    50   Input ~ 0
+Text GLabel 7900 1750 0    50   Input ~ 0
 PC12
-Text GLabel 8550 1800 2    50   Input ~ 0
+Text GLabel 8400 1750 2    50   Input ~ 0
 PD2
-Text Notes 7850 1950 0    50   ~ 0
+Text Notes 7700 1900 0    50   ~ 0
 3v3
-Text Notes 7750 2050 0    50   ~ 0
+Text Notes 7600 2000 0    50   ~ 0
 boot0
-Text GLabel 8050 2100 0    50   Input ~ 0
+Text GLabel 7900 2050 0    50   Input ~ 0
 PF6
 Wire Notes Line
 	7150 550  7150 3750
@@ -933,7 +927,7 @@ U 1 1 6062D4A6
 P 4100 4400
 F 0 "TP1" V 4054 4588 50  0000 L CNN
 F 1 "TestPoint" V 4145 4588 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4300 4400 50  0001 C CNN
 F 3 "~" H 4300 4400 50  0001 C CNN
 	1    4100 4400
 	0    1    1    0   
@@ -952,7 +946,7 @@ U 1 1 6062DDDD
 P 4100 4600
 F 0 "TP2" V 4054 4788 50  0000 L CNN
 F 1 "TestPoint" V 4145 4788 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4300 4600 50  0001 C CNN
 F 3 "~" H 4300 4600 50  0001 C CNN
 	1    4100 4600
 	0    1    1    0   
@@ -963,7 +957,7 @@ U 1 1 6062E05A
 P 4100 4800
 F 0 "TP3" V 4054 4988 50  0000 L CNN
 F 1 "TestPoint" V 4145 4988 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 4800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4300 4800 50  0001 C CNN
 F 3 "~" H 4300 4800 50  0001 C CNN
 	1    4100 4800
 	0    1    1    0   
@@ -974,7 +968,7 @@ U 1 1 6062E1AB
 P 4100 5000
 F 0 "TP4" V 4054 5188 50  0000 L CNN
 F 1 "TestPoint" V 4145 5188 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4300 5000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4300 5000 50  0001 C CNN
 F 3 "~" H 4300 5000 50  0001 C CNN
 	1    4100 5000
 	0    1    1    0   
@@ -1061,63 +1055,117 @@ There are capacitors on the RF board for these currents
 $Comp
 L Connector_Generic:Conn_02x19_Odd_Even J9
 U 1 1 605368F2
-P 10000 1850
-F 0 "J9" H 10050 2967 50  0000 C CNN
-F 1 "Conn_02x19_Odd_Even" H 10050 2876 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x19_P2.54mm_Vertical" H 10000 1850 50  0001 C CNN
-F 3 "~" H 10000 1850 50  0001 C CNN
-	1    10000 1850
+P 10200 1800
+F 0 "J9" H 10250 2917 50  0000 C CNN
+F 1 "Conn_02x19_Odd_Even" H 10250 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x19_P2.54mm_Vertical" H 10200 1800 50  0001 C CNN
+F 3 "~" H 10200 1800 50  0001 C CNN
+	1    10200 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J8
 U 1 1 6053A2E2
-P 8250 2100
-F 0 "J8" H 8300 2717 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 8300 2626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8250 2100 50  0001 C CNN
-F 3 "~" H 8250 2100 50  0001 C CNN
-	1    8250 2100
+P 8100 2050
+F 0 "J8" H 8150 2667 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 8150 2576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 8100 2050 50  0001 C CNN
+F 3 "~" H 8100 2050 50  0001 C CNN
+	1    8100 2050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8050 2300
-NoConn ~ 8050 2400
-NoConn ~ 8550 2300
-NoConn ~ 8550 2400
-NoConn ~ 8550 2200
+NoConn ~ 7900 2250
+NoConn ~ 7900 2350
+NoConn ~ 8400 2150
 Wire Wire Line
-	8850 2600 8550 2600
+	8700 2550 8400 2550
 Wire Wire Line
-	8850 2000 8850 2600
+	8700 1950 8700 2550
 Wire Wire Line
-	8850 2600 8850 2900
+	8700 3050 8150 3050
 Wire Wire Line
-	8850 2900 8300 2900
-Connection ~ 8850 2600
-Wire Wire Line
-	8050 2600 7700 2600
-Wire Wire Line
-	7700 2600 7700 2900
-Wire Wire Line
-	7700 2900 8300 2900
-Connection ~ 8300 2900
-Text GLabel 8050 2500 0    50   Input ~ 0
+	7550 3050 8150 3050
+Connection ~ 8150 3050
+Text GLabel 7900 2450 0    50   Input ~ 0
 PA15
 Text GLabel 5200 4800 0    50   Input ~ 0
 PA15
-Text GLabel 8550 2500 2    50   Input ~ 0
+Text GLabel 8400 2450 2    50   Input ~ 0
 VDD
 Wire Wire Line
 	5700 4800 5950 4800
-Text GLabel 8050 2200 0    50   Input ~ 0
+Text GLabel 7900 2150 0    50   Input ~ 0
 PF7
 Text GLabel 5200 4700 0    50   Input ~ 0
 PF7
 Wire Wire Line
 	5950 4800 5950 4900
 Wire Wire Line
-	9150 1350 9150 3100
+	9350 1300 9350 3050
 Wire Wire Line
-	9150 1350 9800 1350
-NoConn ~ 9800 1250
+	9350 1300 10000 1300
+NoConn ~ 10000 1200
+Text Notes 5200 2050 0    50   ~ 0
+TODO: change footprint of LM334 and Conn_01x02\ncurrent one is hard to solder
+Text Notes 850  6150 0    129  ~ 0
+TODO: Need reset button\nnucleo does not start after power up \nunless reset is pressed
+$Comp
+L Device:R_Small R14
+U 1 1 60CF75BB
+P 8900 2500
+F 0 "R14" H 8959 2546 50  0000 L CNN
+F 1 "10K" H 8959 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8900 2500 50  0001 C CNN
+F 3 "~" H 8900 2500 50  0001 C CNN
+	1    8900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 60CF920C
+P 8900 2800
+F 0 "C2" H 8992 2846 50  0000 L CNN
+F 1 "1u" H 8992 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8900 2800 50  0001 C CNN
+F 3 "~" H 8900 2800 50  0001 C CNN
+	1    8900 2800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7250 550  11100 550 
+Wire Notes Line
+	7250 3450 11100 3450
+Wire Notes Line
+	7250 550  7250 3450
+Wire Wire Line
+	8400 2350 8900 2350
+Wire Wire Line
+	7550 2550 7900 2550
+Wire Wire Line
+	7550 2550 7550 3050
+Wire Wire Line
+	8700 2550 8700 3050
+Connection ~ 8700 2550
+Wire Wire Line
+	8900 2900 8900 3050
+Wire Wire Line
+	8900 3050 8700 3050
+Connection ~ 8700 3050
+Wire Wire Line
+	8400 2250 9100 2250
+Wire Wire Line
+	9100 2250 9100 2650
+Wire Wire Line
+	9100 2650 8900 2650
+Wire Wire Line
+	8900 2650 8900 2700
+Text Notes 8450 2250 0    50   ~ 0
+RESET
+Text Notes 8450 2350 0    50   ~ 0
+3V3
+Wire Wire Line
+	8900 2350 8900 2400
+Wire Wire Line
+	8900 2600 8900 2650
+Connection ~ 8900 2650
 $EndSCHEMATC
