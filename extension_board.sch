@@ -581,79 +581,35 @@ IREF1
 Text Notes 5200 1600 0    50   ~ 0
 1K pot, \nRectangular (3.65mm x 3.00mm x 1.70mm H), \ntop adjust\n
 NoConn ~ 4850 1650
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even CN1
-U 1 1 6052AEFD
-P 8400 4750
-F 0 "CN1" H 8450 5867 50  0000 C CNN
-F 1 "Conn_02x20_Odd_Even" H 8450 5776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 8400 4750 50  0001 C CNN
-F 3 "~" H 8400 4750 50  0001 C CNN
-	1    8400 4750
-	1    0    0    -1  
-$EndComp
 Text GLabel 8200 3950 0    50   Input ~ 0
 I2C_DATA
 Text GLabel 8200 3850 0    50   Input ~ 0
 I2C_CLK
-NoConn ~ 8200 4050
-NoConn ~ 8200 4150
-NoConn ~ 8200 4250
-NoConn ~ 8200 4350
-NoConn ~ 8200 4450
-NoConn ~ 8200 4550
-NoConn ~ 8200 4650
-Text GLabel 8200 4750 0    50   Input ~ 0
+Text GLabel 8200 4050 0    50   Input ~ 0
 EN_SUP1
-Text GLabel 8200 4850 0    50   Input ~ 0
+Text GLabel 8200 4150 0    50   Input ~ 0
 EN_SUP2
-Text GLabel 8200 4950 0    50   Input ~ 0
+Text GLabel 8200 4250 0    50   Input ~ 0
 EN_SUP3
-Text GLabel 8200 5050 0    50   Input ~ 0
+Text GLabel 8200 4350 0    50   Input ~ 0
 EN_SUP4
-Text GLabel 8200 5150 0    50   Input ~ 0
+Text GLabel 8200 4450 0    50   Input ~ 0
 EN_SUP5
-Text GLabel 8200 5250 0    50   Input ~ 0
+Text GLabel 8200 4550 0    50   Input ~ 0
 EN_SUP_REG5V
-NoConn ~ 8200 5350
-NoConn ~ 8200 5450
-NoConn ~ 8200 5550
-NoConn ~ 8200 5650
 Wire Wire Line
-	8000 5750 8000 5950
-Wire Wire Line
-	8000 5750 8200 5750
+	8000 4650 8000 4850
 $Comp
 L power:GND #PWR08
 U 1 1 60545C1E
-P 8000 5950
-F 0 "#PWR08" H 8000 5700 50  0001 C CNN
-F 1 "GND" H 8005 5777 50  0000 C CNN
-F 2 "" H 8000 5950 50  0001 C CNN
-F 3 "" H 8000 5950 50  0001 C CNN
-	1    8000 5950
+P 8000 4850
+F 0 "#PWR08" H 8000 4600 50  0001 C CNN
+F 1 "GND" H 8005 4677 50  0000 C CNN
+F 2 "" H 8000 4850 50  0001 C CNN
+F 3 "" H 8000 4850 50  0001 C CNN
+	1    8000 4850
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8700 3850
-NoConn ~ 8700 3950
-NoConn ~ 8700 4050
-NoConn ~ 8700 4150
-NoConn ~ 8700 4250
-NoConn ~ 8700 4350
-NoConn ~ 8700 4450
-NoConn ~ 8700 4550
-NoConn ~ 8700 4650
-NoConn ~ 8700 4750
-NoConn ~ 8700 4850
-NoConn ~ 8700 4950
-NoConn ~ 8700 5050
-NoConn ~ 8700 5150
-NoConn ~ 8700 5250
-NoConn ~ 8700 5350
-NoConn ~ 8700 5450
-NoConn ~ 8700 5550
-NoConn ~ 8700 5650
-NoConn ~ 8700 5750
 Connection ~ 4350 1750
 Wire Wire Line
 	4850 1300 4850 1350
@@ -661,18 +617,12 @@ Wire Wire Line
 	4350 1150 4350 1750
 Wire Wire Line
 	4350 750  4350 650 
-Wire Notes Line
-	8900 3600 8900 6150
-Wire Notes Line
-	7400 6150 7400 3600
 Text Notes 7450 4250 0    50   ~ 0
 Power board \nconnector
 Wire Notes Line
 	8900 3600 7400 3600
 Wire Notes Line
 	8950 3600 11100 3600
-Wire Notes Line
-	7400 6150 8900 6150
 Text GLabel 3850 2250 0    50   Input ~ 0
 VDD
 $Comp
@@ -979,7 +929,7 @@ U 1 1 6063C3D7
 P 4550 1900
 F 0 "J3" H 4630 1892 50  0000 L CNN
 F 1 "Conn_01x02" H 4630 1801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 4550 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4550 1900 50  0001 C CNN
 F 3 "~" H 4550 1900 50  0001 C CNN
 	1    4550 1900
 	1    0    0    -1  
@@ -992,7 +942,7 @@ U 1 1 606412D9
 P 4050 3450
 F 0 "J2" H 4130 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 4130 3351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 4050 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 3450 50  0001 C CNN
 F 3 "~" H 4050 3450 50  0001 C CNN
 	1    4050 3450
 	1    0    0    -1  
@@ -1003,7 +953,7 @@ U 1 1 60641A14
 P 5300 3450
 F 0 "J4" H 5380 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 5380 3351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 5300 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5300 3450 50  0001 C CNN
 F 3 "~" H 5300 3450 50  0001 C CNN
 	1    5300 3450
 	1    0    0    -1  
@@ -1014,7 +964,7 @@ U 1 1 60641FCE
 P 6450 3450
 F 0 "J6" H 6530 3442 50  0000 L CNN
 F 1 "Conn_01x02" H 6530 3351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical_SMD" H 6450 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6450 3450 50  0001 C CNN
 F 3 "~" H 6450 3450 50  0001 C CNN
 	1    6450 3450
 	1    0    0    -1  
@@ -1168,4 +1118,39 @@ Wire Wire Line
 Wire Wire Line
 	8900 2600 8900 2650
 Connection ~ 8900 2650
+$Comp
+L Connector:Conn_01x09_Male J10
+U 1 1 60D91420
+P 8550 4250
+F 0 "J10" H 8522 4274 50  0000 R CNN
+F 1 "Conn_01x09_Male" H 8522 4183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical_SMD_Pin1Left" H 8550 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+	1    8550 4250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3850 8350 3850
+Wire Wire Line
+	8350 3950 8200 3950
+Wire Wire Line
+	8200 4050 8350 4050
+Wire Wire Line
+	8200 4150 8350 4150
+Wire Wire Line
+	8200 4250 8350 4250
+Wire Wire Line
+	8200 4350 8350 4350
+Wire Wire Line
+	8200 4450 8350 4450
+Wire Wire Line
+	8200 4550 8350 4550
+Wire Wire Line
+	8000 4650 8350 4650
+Wire Notes Line
+	8900 3600 8900 5150
+Wire Notes Line
+	7400 5150 8900 5150
+Wire Notes Line
+	7400 5150 7400 3600
 $EndSCHEMATC
